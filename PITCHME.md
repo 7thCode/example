@@ -8,7 +8,7 @@
 $ xcode-select --install
 ```
 ---
-Node.js
+##### Node.js
 Node.JSのインストールは２段階。
 まずNode.JSのバージョン管理ツール"Nodebrew"をインストール。
 その後Nodebrewで本体をインストール。
@@ -17,11 +17,9 @@ Node.JSのインストールは２段階。
 名前が似てるけど"Homebrew"とは一切関係がない。
 ---
 ###### Nodebrewのインストール
-
-```bash
+```
 $ curl -L git.io/nodebrew | perl - setup
 ```
-
 終了後にターミナルに表示されるPATHを.bashrcに追加し保存。
 （以下、MacOS10.15以降では".bashrc"を".zshrc"と読み替えてください。)
 ```bash
@@ -29,7 +27,6 @@ $ nano .bashrc
 
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 ```
-
 適用
 ```bash
 $ source .bashrc
