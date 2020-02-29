@@ -2,7 +2,7 @@
 ---
 #### MacOS
 ---
-##### xcode
+xcode
 
 まず、なにかと使用するAppleの標準開発環境"xcode"をインストール。
 
@@ -10,8 +10,7 @@
 $ xcode-select --install
 ```
 ---
-##### Node.js
-
+Node.js
 Node.JSのインストールは２段階。
 まずNode.JSのバージョン管理ツール"Nodebrew"をインストール。
 その後Nodebrewで本体をインストール。
