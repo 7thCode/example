@@ -1,8 +1,8 @@
-# 環境構築手順
+### 環境構築手順
 ---
-## MacOS
+#### MacOS
 ---
-### xcode
+##### xcode
 
 まず、なにかと使用するAppleの標準開発環境"xcode"をインストール。
 
@@ -10,7 +10,7 @@
 $ xcode-select --install
 ```
 ---
-### Node.js
+##### Node.js
 
 Node.JSのインストールは２段階。
 まずNode.JSのバージョン管理ツール"Nodebrew"をインストール。
@@ -19,7 +19,7 @@ Node.JSのインストールは２段階。
 [nodebrew](https://github.com/hokaccha/nodebrew)
 名前が似てるけど"Homebrew"とは一切関係がない。
 ---
-#### Nodebrewのインストール
+###### Nodebrewのインストール
 
 ```bash
 $ curl -L git.io/nodebrew | perl - setup
@@ -38,7 +38,7 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 $ source .bashrc
 ```
 ---
-#### Node.JSのインストール
+###### Node.JSのインストール
 インストールできるNode.jsの最新バージョンを確認 
 ```bash
 $ nodebrew ls-remote
@@ -51,7 +51,7 @@ $ nodebrew install-binary v12.16.0
 
 *奇数バージョンは開発テスト用のため、常に偶数バージョンをインストールすること 
 ---
-### homebrew
+##### homebrew
 
 次にMac用の各種ソフトウェアをインストールできるパッケージマネージャ"Homebrew"をインストール。
 [Homebrew公式](https://brew.sh/index_ja)
@@ -62,7 +62,7 @@ $ brew doctor
 Your system is ready to brew.
 ```
 ---
-### MongoDB
+##### MongoDB
 
 homebrew経由でMongoDBをインストール
 ```bash
