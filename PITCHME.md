@@ -2,17 +2,11 @@
 ---
 #### MacOS
 ---
-
-@snap[midpoint]
-
+@snap[midpoint span-80]
 ##### xcode
 ###### まず、なにかと使用するAppleの標準開発環境"xcode"をインストール。
-
-
 @box[bg-black text-white]($ xcode-select --install)
-
 @snapend
-
 ---
 ##### Node.js
 Node.JSのインストールは２段階。
