@@ -53,3 +53,4 @@ homebrew経由でMongoDBをインストール
 @box[bg-black text-white]（$ brew tap mongodb/brew)
 @box[bg-black text-white]（$ brew install mongodb-community)
 @snapend
+---
