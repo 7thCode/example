@@ -8,6 +8,7 @@
 @box[bg-black text-white]($ xcode-select --install)
 @snapend
 ---
+@snap[midpoint span-80]
 ##### Node.js
 Node.JSのインストールは２段階。
 まずNode.JSのバージョン管理ツール"Nodebrew"をインストール。
@@ -15,51 +16,40 @@ Node.JSのインストールは２段階。
 (Node.JSはバージョンアップが激しいため、バージョンアップを簡単に行えるよう。)
 [nodebrew](https://github.com/hokaccha/nodebrew)
 名前が似てるけど"Homebrew"とは一切関係がない。
+@snapend
 ---
+@snap[midpoint span-80]
 ###### Nodebrewのインストール
-```
-$ curl -L git.io/nodebrew | perl - setup
-```
+@box[bg-black text-white]($ curl -L git.io/nodebrew | perl - setup)
 終了後にターミナルに表示されるPATHを.bashrcに追加し保存。
 （以下、MacOS10.15以降では".bashrc"を".zshrc"と読み替えてください。)
-```bash
-$ nano .bashrc
-
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-```
+@box[bg-black text-white]($ nano .bashrc)
+@box[bg-black text-white](export PATH=$HOME/.nodebrew/current/bin:$PATH)
 適用
-```bash
-$ source .bashrc
-```
+@box[bg-black text-white]($ source .bashrc)
+@snapend
 ---
+@snap[midpoint span-80]
 ###### Node.JSのインストール
 インストールできるNode.jsの最新バージョンを確認 
-```bash
-$ nodebrew ls-remote
-```
-
+@box[bg-black text-white]($ nodebrew ls-remote)
 Node.jsをインストール
-```bash
-$ nodebrew install-binary v12.16.0
-```
-
+@box[bg-black text-white]($ nodebrew install-binary v12.16.0)
 *奇数バージョンは開発テスト用のため、常に偶数バージョンをインストールすること 
+@snapend
 ---
+@snap[midpoint span-80]
 ##### homebrew
-
 次にMac用の各種ソフトウェアをインストールできるパッケージマネージャ"Homebrew"をインストール。
 [Homebrew公式](https://brew.sh/index_ja)
-
-```bash
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-$ brew doctor
-Your system is ready to brew.
-```
+@box[bg-black text-white]($ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)")
+@box[bg-black text-white]（$ brew doctor)
+@box[bg-black text-white]（Your system is ready to brew.)
+@snapend
 ---
+@snap[midpoint span-80]
 ##### MongoDB
-
 homebrew経由でMongoDBをインストール
-```bash
-$ brew tap mongodb/brew
-$ brew install mongodb-community
-```
+@box[bg-black text-white]（$ brew tap mongodb/brew)
+@box[bg-black text-white]（$ brew install mongodb-community)
+@snapend
