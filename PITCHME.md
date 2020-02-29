@@ -2,14 +2,13 @@
 ---
 #### MacOS
 ---
-##### xcode
-まず、なにかと使用するAppleの標準開発環境"xcode"をインストール。
 
 @snap[midpoint]
 
-```bash
-$ xcode-select --install
-```
+##### xcode
+まず、なにかと使用するAppleの標準開発環境"xcode"をインストール。
+
+@box[bg-black text-white](```bash$ xcode-select --install```)
 
 @snapend
 
