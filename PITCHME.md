@@ -42,10 +42,8 @@ Node.jsをインストール
 ##### homebrew
 次にMac用の各種ソフトウェアをインストールできるパッケージマネージャ"Homebrew"をインストール。
 [Homebrew公式](https://brew.sh/index_ja)
-
 @box[bg-black text-white]（$ brew doctor)
 @box[bg-black text-white]（Your system is ready to brew.)
-
 @snapend
 ---
 @snap[midpoint span-80]
