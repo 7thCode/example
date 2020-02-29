@@ -8,9 +8,9 @@
 ##### xcode
 ###### まず、なにかと使用するAppleの標準開発環境"xcode"をインストール。
 
-```bash
+
 @box[bg-black text-white]($ xcode-select --install)
-```
+
 @snapend
 
 ---
