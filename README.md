@@ -1,2 +1,0 @@
-# example
-After School
