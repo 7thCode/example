@@ -10,24 +10,8 @@ router.get('/', function (req, res, next) {
 
 });
 
-router.get('/insert', function (req, res, next) {
-	MongoClient.connect('mongodb://127.0.0.1:27017/myDB', (err, db) => {
-		if (!err) {
-			db.collection("myCollection", (err2, collection) => {
-				if (!err2) {
-					res.send("OK!");
-					db.close();
-				} else {
-					res.send(err.message);
-				}
-			})
-		} else {
-			res.send(err.message);
-		}
-	});
-});
 
-router.get('/insert2', function (req, res, next) {
+router.get('/ connect', function (req, res, next) {
 	MongoClient.connect('mongodb://localhost', (err, client) => {
 		if (!err) {
 			const db = client.db("myDB");
@@ -45,7 +29,7 @@ router.get('/insert2', function (req, res, next) {
 	});
 });
 
-router.get('/insert3', function (req, res, next) {
+router.get('/insert', function (req, res, next) {
 	MongoClient.connect('mongodb://localhost', (err, client) => {
 		if (!err) {
 			const db = client.db("myDB");
